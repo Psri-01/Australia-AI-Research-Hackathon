@@ -30,7 +30,7 @@ def install():
 
     # 4. Create Git Hook
     hook_path = f"{HOOK_DIR}/pre-commit"
-    with open(hook_path, "w") as f:
+    with open(hook_path, "w", encoding="utf-8") as f:
         f.write(f"#!/bin/sh\n")
         f.write(f"echo '🤖 Running Vibe Refinery...'\n")
         f.write(f"export GITHUB_TOKEN=$GITHUB_TOKEN\n") # Pass env var
