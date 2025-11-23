@@ -4,7 +4,7 @@ https://gamma.app/docs/Vibe-Refinery-jp25cumonwb0pdr
 
 **Automated Technical Debt Prevention for AI-Assisted Development Teams**
 
-Vibe Refinery is a White Box Verification Engine that transforms AI-generated code into production-ready, maintainable software. Built as a Git pre-commit hook, it automatically refactors code to CPython standards, adds engineering-grade documentation, and generates detailed change reports—ensuring that even rapidly prototyped code meets senior architect standards before it enters your repository.
+Vibe Refinery is a static White Box Verification tool that transforms AI-generated code into production-ready, maintainable software. Built as a Git pre-commit hook, it automatically refactors code to CPython standards, adds engineering-grade documentation, and generates detailed change reports—ensuring that even rapidly prototyped code meets senior architect standards before it enters your repository.
 
 ## The Problem
 
