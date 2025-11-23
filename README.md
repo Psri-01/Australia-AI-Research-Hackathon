@@ -34,10 +34,10 @@ git add my_script.py
 
 # 3. Commit (hook runs automatically)
 git commit -m "Add math function"
-# Vibe Bot automatically:
-# - Adds inline comments
-# - Tags changes with [Auto Updated]
-# - Re-stages the modified file
+ Vibe Bot automatically:
+ - Adds inline comments
+ - Tags changes with [Auto Updated]
+ - Re-stages the modified file
 
 ⚠️ Important Notes
 GitHub Token Exposure: The .env file contains a real token. Regenerate it immediately after this repository is public.
