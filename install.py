@@ -2,7 +2,7 @@ import os
 import urllib.request
 import sys
 
-REPO_URL = "https://raw.githubusercontent.com/Psri-01/Australia-AI-Research-Hackathon/main/vibe_refinery"
+REPO_URL = "https://raw.githubusercontent.com/Psri-01/Australia-AI-Research-Hackathon/main"
 FILES = ["main.py", "graph.py", "utils.py", "requirements.txt"]
 HOOK_DIR = ".git/hooks"
 
