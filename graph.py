@@ -93,6 +93,7 @@ app = ui_workflow.compile()
 #  PART 2: GIT HOOK AGENT NODES (Pre-Commit)
 # ==========================================
 
+# --- NODE: THE DIFF AWARE BOT ---
 def diff_commenter_node(state: AgentState):
     print("  --> Vibe Bot: Analyzing Diff...")
     prompt = f"""
@@ -100,10 +101,11 @@ def diff_commenter_node(state: AgentState):
     A developer has modified this file. Use the GIT DIFF to identify changes.
     
     YOUR TASK:
-    1. Update comments/docstrings ONLY for the specific lines/blocks modified in the DIFF.
-    2. **DO NOT** touch comments in unchanged parts of the code.
-    3. Add a tag `[Auto Updated]` to new comments.
-    4. Return the FULL valid Python file.
+    1. Analyze the GIT DIFF to find exactly which lines were added or modified.
+    2. **UNTOUCHED CODE:** Output it exactly as is. Do NOT add comments to code that does not appear in the diff.
+    3. **MODIFIED CODE:** Add concise inline comments explaining the logic.
+    4. **TAGGING:** Start every NEW comment you add with `[Auto Updated]`.
+    5. **Docstrings:** You may add a standard docstring to new functions, but do not prefix docstrings with the tag.
 
     Git Diff:
     {state['diff_context']}
