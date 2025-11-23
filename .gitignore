@@ -1,0 +1,24 @@
+# Secrets (CRITICAL)
+.env
+.env.local
+secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+venv/
+.venv/
+env/
+
+# Project Specific (Vibe Refinery temps)
+temp_extracted/
+refined_project/
+*.zip
+*.bak
+
+# IDEs
+.vscode/
+.idea/
