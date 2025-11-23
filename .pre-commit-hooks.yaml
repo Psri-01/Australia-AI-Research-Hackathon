@@ -1,0 +1,8 @@
+- id: vibe-check
+  name: Vibe Refinery AI
+  description: AI-powered code review and documentation generator.
+  entry: vibe-check
+  language: python
+  types: [python]
+  require_serial: true
+  pass_filenames: false # We handle git diff logic internally
