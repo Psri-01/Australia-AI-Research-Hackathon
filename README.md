@@ -4,11 +4,10 @@ Vibe Refinery: Complete Overview
 Vibe Refinery is an AI-powered code review and documentation system that integrates with Git as a pre-commit hook. It uses LangChain + LangGraph to refactor code, add comments, and generate documentation.
 
 🏗️ Architecture Overview
-The project has two main workflows:
+The project has the main workflow:
 
-UI Agent (app.py) – Interactive Streamlit interface for live code refinement
 Git Hook Agent (main.py) – Auto-runs on git commit to enhance staged files
-Both workflows are defined in graph.py using LangGraph state machines.
+This is defined in graph.py using LangGraph state machines.
 
 Workflow for New Devs
 # 1. Clone the repository
